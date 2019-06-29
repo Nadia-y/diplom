@@ -4,21 +4,22 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .ul, li{
-display: block;
-margin: 0;
-padding: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 .header{
     background-image: url('img/fon1.png');
     padding-top: 40px;
-    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 .tel{
     margin-top: 90px;
     position: relative;
-       } 
+    bottom: -100px;
+ } 
    
 .nav-item a{
     font-size: 13px;
@@ -113,6 +114,7 @@ width: 230px;
 }
 .video{
     background-color: #31d4e7;
+   
 }
 .video__title{
     margin-top: 90px;
@@ -139,7 +141,7 @@ margin-right: 30px;
     padding: 0px;
 }
 .embed-responsiv-item{
-    width: 500px;
+    width: 100%;
     height: 300px;
     border: none;
 }
@@ -251,7 +253,8 @@ margin-bottom: -100px;
 .footer{
     background-image: url('img/fon_f.png');
     margin-top: 190px;
-background-color: black
+background-color: black;
+background-size: cover;
 }
 .title__main__footer{
     color:white;
@@ -283,6 +286,11 @@ font-size: 24px;
     color:#aaaaaa;
     font-size: 12px;
 }
+.reserved1{
+    color:#aaaaaa;
+    font-size: 12px;
+    text-align: right;
+}
 .reserved_all{
     padding-top: 40px;
     padding-bottom: 30px;
@@ -292,6 +300,8 @@ font-size: 24px;
    height: 1px;
    background-color: #aaaaaa;
 }
+
+
 @media screen and (max-width:992px){
 .title__text  {
  width: auto;
@@ -299,4 +309,27 @@ font-size: 24px;
 .carousel-text2{
     width: auto;
   }
- 
+.title__main{
+    font-size:14px;
+}
+.tel{
+width: 90%;
+position: relative;
+bottom: 0;
+}
+.mob{
+    width: 90%;;
+}
+.reserved,.reserved1 {
+    text-align: center;
+}
+.s_line{
+    width: 8%;
+}
+.team__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-auto-rows:minmax(100px,auto);
+    grid-column-gap: 1em;
+    }
+}
