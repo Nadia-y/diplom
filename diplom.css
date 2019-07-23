@@ -162,7 +162,38 @@ grid-column-gap: 2em;
     transition: 0.5s linear;
     opacity: 0;
     width: 100%;
-    height: 100%;
+    height: 79%;
+}
+.hover2{
+    position: absolute;
+    top:100%;
+    left:0;
+    bottom:0;
+    right: 0; 
+    width: 100%;
+    height: 79%;
+    background-color: rgba(0, 0, 10, 5);
+    padding-top:60px;
+    text-align: center;
+    color: aliceblue;
+    transition: all .25s;
+    opacity: 0;
+}
+.hover3{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0; 
+    width: 100%;
+    height: 79%;
+    background-color:rgba(0, 0, 0, 5);
+    padding-top:60px;
+    text-align: center;
+    color: aliceblue;
+    transition: all .25s;
+    opacity: 0;
+    transform: scale(0);
 }
 .face{
     position: relative;
@@ -170,6 +201,15 @@ grid-column-gap: 2em;
 .face:hover .hover{
     opacity: 1;
 }
+.face:hover .hover2{
+    opacity: 1;
+    top:0;
+}
+.face:hover .hover3{
+    opacity: 1;
+    transform: scale(1);
+}
+
 .team__grid img{
     display: block;
     width: 100%;
